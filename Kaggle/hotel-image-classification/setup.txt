@@ -1,0 +1,58 @@
+----------------------
+Environment
+----------------------
+python 3.5
+
+----------------------
+Command Line Arguments To Load Library
+----------------------
+
+$ pip install theano
+$ pip install keras
+$ pip install pil
+
+
+--------------------------------
+Files Includes With This Project:
+--------------------------------
+	hw5.py
+	README.txt
+	train.csv
+	data/train/
+				1.jpg
+				2.jpg
+				.
+				.
+				
+	
+	data/test/
+				1.jpg
+				2.jpg
+				.
+				.
+				
+--------------------------------
+Set Variables in Code to Load Images based on Your Directory
+--------------------------------
+#training_directory = " your training image folder path"
+#testing_directory =  " your testing image folder path"
+
+--------------------------------
+Keep train.csv in the same directory
+--------------------------------
+
+--------------------------------
+How To Run "hw5.py":
+--------------------------------
+Open your python 3 console, run the file
+
+
+-----------------------
+Result Analysis
+-----------------------
+-	If we run the code, the final output will be saved in output.csv file. 
+-	Keras generates an auto result summary for each epoch. It will show loss value and accuracy for validation data based on the designed model.
+-	There are many corrupted image file in training and testing data. I used try/catch block to avoid such corrupted/damaged files.
+-	As a result, the output files contained almost 19634 data, not 19648. Then, I checked the missing image files and set some random values for the images. 
+
+(The corrupted image file numbers are: 53675, 55478, 59009, 60151, 60968, 64800, 68787, 72363, 72751, 73726, 75380, 76032, 76787, 79616)
